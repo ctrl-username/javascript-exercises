@@ -1,8 +1,8 @@
 const sumAll = function (min, max) {
   let sum = 0;
 
-  if (min < 0 || max < 0) return "Error";
-
+  if (min < 0 || max < 0 || typeof min != "number" || typeof max != "number")
+    return "Error";
   let start = 0;
   let end = 0;
   if (min > max) {
@@ -21,7 +21,7 @@ const sumAll = function (min, max) {
   return sum;
 };
 
-console.log(sumAll(104, 104));
+console.log(sumAll("hi", 104));
 // Do not edit below this line
 module.exports = sumAll;
 // function takes in two arguements a and b which is presumably used to add numbers starting from a with numbers within a to b
