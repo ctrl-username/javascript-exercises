@@ -5,9 +5,10 @@ const leapYears = function (year) {
   // okay it works pretty well huh
   //year % 4  === 0 ? true : false ||  year % 100 === 0 ? false : year % 400 === 0 ? true : false;
   //
-  if (year % 400 == 0 && year % 100 != 0) {
-    return true;
-  }
+  // realised this condition can never be true hence redundant
+  // if (year % 400 == 0 && year % 100 != 0) {
+  //   return true;
+  // }
 
   if (year % 4 == 0 && year % 100 != 0) {
     return true;
