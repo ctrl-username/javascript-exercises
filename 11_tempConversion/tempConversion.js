@@ -1,16 +1,19 @@
 const convertToCelsius = function (fahren) {
-  return Math.round((fahren - 32) * (5 / 9), 2);
+  const celsius = (fahren - 32) * (5 / 9);
+  console.log(celsius.toFixed(1) - 0);
+  return celsius.toFixed(1) - 0;
 };
 
 const convertToFahrenheit = function (celsius) {
-  return Math.round(celsius * (9 / 5) + 32, 2);
+  const fahrenheit = celsius * (9 / 5) + 32;
+  console.log(fahrenheit.toFixed(1) - 0);
+  return fahrenheit.toFixed(1) - 0;
 };
-
+const val = 100;
+convertToCelsius(val);
+convertToFahrenheit(val);
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
   convertToFahrenheit,
-  d,
 };
-
-console.log(convertToCelsius(33), convertToFahrenheit(33));
