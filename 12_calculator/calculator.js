@@ -19,9 +19,11 @@ const power = function (a, b) {
 };
 
 const factorial = function (n) {
-  for (let i = n; i <= n; i++) {
-    sum *= n;
+    let sum = 1
+  for (let i = n; i >= 1; i--) {
+  sum *= i;
   }
+    return sum;
 };
 
 // Do not edit below this line
